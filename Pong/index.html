@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Menu </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var menu_text = new sjs.Text("MENU",28,"red");
+menu_text.centerH();
+
+var tutorial_text = new sjs.Text("HOW TO PLAY, use A and D to move the top paddle, use arrow keys to move bottom paddle. DO NOT LET THE BALL TOUCH THE WALL! made by kevin parmer",28,"red");
+tutorial_text.centerH().offset(0,30);
+
+var startbtn = new sjs.Button("Start", function(){
+	window.location = "pong.html";
+});
+
+startbtn.centerH().offset(0,200);
+
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1> Menu </h1>
+
+<div id="target" style="margin:auto;background:teal;"></div>
+</body>
+</html>
